@@ -156,17 +156,121 @@
 //     } 
 // }
 
-class Test{
-    public void m1(String s){
-        System.out.println("String-args");
-    }
-    public void m1(Object o){
-        System.out.println("Object-args");
-    }
-    public static void main(String[] args){
-        Test t = new Test();
-        t.m1(new String()); //String-args
-        t.m1(new Object()); //Object-args
-        t.m1(null); //String-args
-    }
-}
+// class Test{
+//     public void m1(String s){
+//         System.out.println("String-args");
+//     }
+//     public void m1(Object o){
+//         System.out.println("Object-args");
+//     }
+//     public static void main(String[] args){
+//         Test t = new Test();
+//         t.m1(new String()); //String-args
+//         t.m1(new Object()); //Object-args
+//         t.m1(null); //String-args
+//     }
+// }
+
+
+
+// class Test{
+//     public void m1(String s){
+//         System.out.println("String-args");
+//     }  
+//     public void m1(Thread t){
+//         System.out.println("Thread-arg");
+//     }  
+//     public static void main(String[] args){
+//         Test t = new Test();
+//         t.m1(null); //
+//     }
+// }
+
+
+
+
+// class Person{
+
+// }
+
+// class Student extends Person{
+
+// }
+
+// class Test{
+//     public static void m1(Person p){
+//         System.out.println("Person");
+//     }
+//     public static void m1(Student s){
+//         System.out.println("Student");
+//     }
+//     public static void main(String[] args){
+//         Person p = new Person();
+//         m1(p); //Person
+//         Student s = new Student();
+//         m1(s); //Student
+//         Person p2 = new Student();
+//         m1(p2); //Person
+//     }
+// }
+
+
+// class Parent{
+//     public void getProperty(){
+//         System.out.println("500 arcs land just beside CBE airport + 500kgs gold");
+//     }
+//     public void doMarriage(){
+//         System.out.println("All the Best");
+//     }
+// }
+
+// class Child extends Parent{
+//     public void doMarriage(){
+//         System.out.println("Samantha || Rashmika");
+//     }
+// }
+
+// class Test{
+//     public static void main(String[] args){
+//         Parent p = new Parent();
+//         p.getProperty(); // 500 arcs land just beside CBE airport + 500kgs gold
+//         p.doMarriage(); // All the Best
+        
+//         Child c = new Child();
+//         c.getProperty();  // 500 arcs land just beside CBE airport + 500kgs gold
+//         c.doMarriage();  // Samantha || Rashmika
+
+//         Parent p2 = new Child();
+//         p2.getProperty();  // 500 arcs land just beside CBE airport + 500kgs gold
+//         p2.doMarriage();  // Samantha || Rashmika
+//     }   
+// }
+
+
+
+// abstract class Animal{
+//     public abstract void eat();
+// }
+// class Tiger extends Animal{
+//     public void eat(){
+//         System.out.println("Meat");
+//     }
+// }
+// class Cow extends Animal{
+//     public void eat(){
+//         System.out.println("Grass");
+//     }
+// }
+// class Test{
+//     public static void main(String[] args){
+//         Animal a = new Tiger();
+//         a.eat(); // Meat
+//         a = new Cow();
+//         a.eat();  // Grass
+//     }
+// }
+
+
+
+
+
